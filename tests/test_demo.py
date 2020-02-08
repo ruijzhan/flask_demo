@@ -27,8 +27,7 @@ class DemoTestCase(unittest.TestCase):
     def test_index_page(self):
         response = self.client.get('/')
         data = response.get_data(as_text=True)
-        self.assertIn('Do not pass the test', data)
-        #self.assertIn('This is a Blueprint page', data)
+        self.assertIn('This is a Blueprint page', data)
 
 if __name__ == '__main__':
     unittest.main()
