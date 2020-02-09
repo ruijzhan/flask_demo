@@ -30,4 +30,4 @@ class DemoTestCase(unittest.TestCase):
         self.assertIn('This is a Blueprint page', data)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)
